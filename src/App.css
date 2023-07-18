@@ -20,10 +20,12 @@ body{
    
     height: 120px;
 }
-.slider-height{
-height: 1000px;
-}
+
 .title{
     margin: 10px;
     font-weight: bold;
+}
+.card{
+    background-color: #24282b !important;
+    border: white 1px solid;
 }

@@ -8,7 +8,7 @@ import sideImg2 from "../images/The Meg.jpg"
 
 function Slides() {
   return (
-    <div>
+    <div class="mt-3">
           <div class="container-fluid md-2">
       <div class="row">
         <div class="col-lg-8 slider-height">

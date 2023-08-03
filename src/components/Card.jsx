@@ -1,30 +1,169 @@
-import React from "react";
-import cardimge from '../images/oppenheimer.jpg'
+import React, { useState } from "react";
+import cardimg1 from '../images/oppenheimer.jpg'
+import cardimg2 from "../images/extraction 2.jpg"
+import cardimg3 from "../images/John WICK.jpg"
+import cardimg4 from "../images/euphobia.jpg"
+import cardimg5 from "../images/Stranger things.jpg"
+import cardimg6 from "../images/Transformers6.jpg"
+import cardimg7 from "../images/Glass onion.jpg"
+import cardimg8 from "../images/Game of thrones.jpg"
+import cardimg9 from "../images/My fault.jpg"
+import cardimg10 from "../images/titanic.jpg"
+
+
+
 function Card() {
+
+
   return (
     <div>
-      <h3 class="mt-5 ms-3">What to watch</h3>
-      <p class="ms-3">shows and movies just for you</p>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card" style={{width: "18rem"}}>
-              <img class="card-img-top" src={cardimge} alt="Card image cap" />
-              <div class="card-body">
-              <p class="card-title">Rating *</p>
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">
+      <h3 className="mt-5 ms-3">Fans Favourite</h3>
+      <p className="ms-3">shows and movies just for you</p>
+      <div className="container-fluid padd ">
+        <div className="row cardmovies">
+          <div className="col-lg-2  ">
+            <div className="card " style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg1} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+
+
+                <h5 className="card-title">Oppenheimer</h5>
+
+                <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" className="btn btn-dark">
                   Trailor
                 </a>
               </div>
             </div>
           </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg2} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">Extraction 2</h5>
+
+                <a href="https://www.youtube.com/watch?v=Y274jZs5s7s" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg3} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">John Wick 4</h5>
+
+                <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg6} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">Transformers</h5>
+
+                <a href="https://www.youtube.com/watch?v=itnqEauWQZM" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg5} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">Stranger Things</h5>
+
+                <a href="https://www.youtube.com/watch?v=R1ZXOOLMJ8s" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
+      <div className="container-fluid padd ">
+        <div className="row cardmovies">
+          <div className="col-lg-2  ">
+            <div className="card " style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg4} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">6 Underground</h5>
+
+                <a href="https://www.youtube.com/watch?v=YLE85olJjp8" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg7} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">Glass Onion</h5>
+
+                <a href="https://www.youtube.com/watch?v=gj5ibYSz8C0" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg8} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">Game Of Thrones</h5>
+
+                <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg9} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">My Fault</h5>
+
+                <a href="https://www.youtube.com/watch?v=PaB7cGBuCP0" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-2">
+            <div className="card" style={{ width: "200px" }}>
+              <img className="card-img-top" src={cardimg10} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-title">Rating *</p>
+                <h5 className="card-title">Titanic</h5>
+
+                <a href="https://www.youtube.com/watch?v=kVrqfYjkTdQ" target="_blank" className="btn btn-dark">
+                  Trailor
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   );
 }

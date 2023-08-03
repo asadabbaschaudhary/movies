@@ -1,39 +1,69 @@
-import React from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 function Feature() {
+  const [movies, setMovies] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/movies/featured")
+      .then((res) => {
+        setMovies(res.data.movies);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  console.log(movies);
   return (
-    <div>
-        <h3 class="mt-5 ms-3">Featured today</h3>
-        <div class="container-fluid mt-4">
-            <div class="row">
-                <div class='col-lg-6'>
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src='' alt="First slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide"/>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    <div className="mainf">
+      <h3 class="fm">Featured Movies:</h3>
+      <div id="carouselExampleCaptions1" className="carousel slide feature">
+        <div className="carousel-inner">
+          {movies.map((movie, index) => {
+            return (
+              <>
+                <div
+                  className={
+                    index == 0 ? "carousel-item active" : "carousel-item"
+                  }
+                  key={index}
+                >
+                  <img src={movie.image} className="imgstyle" alt="..." />
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>{movie.name}</h5>
+                  </div>
                 </div>
-            </div>
+              </>
+            );
+          })}
         </div>
-
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions1"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">prev</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions1"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Feature
+export default Feature;

@@ -95,7 +95,7 @@ function Movies() {
                         //   updateItem(movie.id);
                         // }}
                         className="btn  mt-3 btn-dark border-white"><Link className='text-white' to={`/update/${movie.id}`}>
-                        Update </Link>
+                        UPDATE </Link>
                       </button>
                     </td>
                   </tr>

@@ -33,16 +33,16 @@ function Movies() {
         console.log(err);
       });
   }
-  function updateItem(id) {
-    axios
-      .put(`http://localhost:3001/update-movies/${id}`)
-      .then((res) => {
-        console.log("update is pending");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+  // function updateItem(id) {
+  //   axios
+  //     .put(`http://localhost:3001/update-movies/${id}`)
+  //     .then((res) => {
+  //       console.log("update is pending");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
   return (
     <>
       <div className="container">
@@ -91,12 +91,11 @@ function Movies() {
                       </button>
                       <br />
                       <button
-                        onClick={() => {
-                          updateItem(movie.id);
-                        }}
-                        className="btn  mt-3 btn-dark border-white"
-                      >
-                        Update
+                        // onClick={() => {
+                        //   updateItem(movie.id);
+                        // }}
+                        className="btn  mt-3 btn-dark border-white"><Link className='text-white' to={`/update/${movie.id}`}>
+                        Update </Link>
                       </button>
                     </td>
                   </tr>

@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
 import Create from "./pages/Create";
 import Detail from "./pages/Detail";
+import UpdateMovie from "./pages/UpdateMovie";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="/tvshows" element={<TvShows />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/create" element={<Create />} />
+        <Route path="/create" element={<Create />} /> 
+        <Route path="/update" element={<UpdateMovie />} /> 
         <Route path="/search" element={<Search />} />
         <Route path="/detail/:id" element={<Detail/>} />
         <Route path="/dashboard" element={<Dashboard />} />

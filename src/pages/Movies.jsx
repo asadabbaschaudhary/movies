@@ -54,7 +54,7 @@ function Movies() {
                     </div>
                     <div className="trailerStyle">
                       <a
-                        href="https://www.youtube.com/watch?v=uYPbbksJxIg"
+                        href={movie.trailor}
                         target="_blank"
                         className="btn btn-dark trabtn"
                       >

@@ -47,7 +47,7 @@ function Movies() {
     <>
       <div className="container">
         <div className="createMovie">
-          <Link to="/create">Create-Movie</Link>
+          <Link style={{marginLeft: "45%", marginTop: "10px"}} to="/create " className='btn btn-dark border-white '>Create-Movie</Link>
         </div>
         <table class="table maindiv">
           <thead>
@@ -94,8 +94,8 @@ function Movies() {
                         // onClick={() => {
                         //   updateItem(movie.id);
                         // }}
-                        className="btn  mt-3 btn-dark border-white"><Link className='text-white' to={`/update/${movie.id}`}>
-                        UPDATE </Link>
+                        className="btn  mt-3 btn-dark border-white"><Link className='text-white' to={`/update/${movie.id}`} style={{textDecoration: "none"}}>
+                           Update </Link>
                       </button>
                     </td>
                   </tr>

@@ -37,7 +37,7 @@ function Card() {
 
                 <h5 className="card-title">Oppenheimer</h5>
 
-                <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" className="btn btn-dark " style={{marginTop: "3px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -54,7 +54,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">Extraction 2</h5>
 
-                <a href="https://www.youtube.com/watch?v=Y274jZs5s7s" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=Y274jZs5s7s" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -71,7 +71,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">John Wick 4</h5>
 
-                <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -87,7 +87,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">Transformers</h5>
 
-                <a href="https://www.youtube.com/watch?v=itnqEauWQZM" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=itnqEauWQZM" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -103,7 +103,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">Stranger Things</h5>
 
-                <a href="https://www.youtube.com/watch?v=R1ZXOOLMJ8s" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=R1ZXOOLMJ8s" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -126,7 +126,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">6 Underground</h5>
 
-                <a href="https://www.youtube.com/watch?v=YLE85olJjp8" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=YLE85olJjp8" target="_blank" className="btn btn-dark" style={{marginTop: "8px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -142,7 +142,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">Glass Onion</h5>
 
-                <a href="https://www.youtube.com/watch?v=gj5ibYSz8C0" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=gj5ibYSz8C0" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -161,7 +161,7 @@ function Card() {
                 
                 <h5 className="card-title">Game Of Thrones</h5>
 
-                <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -177,7 +177,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">My Fault</h5>
 
-                <a href="https://www.youtube.com/watch?v=PaB7cGBuCP0" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=PaB7cGBuCP0" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>
@@ -194,7 +194,7 @@ function Card() {
                 <img src={star} alt="" />
                 <h5 className="card-title">Titanic</h5>
 
-                <a href="https://www.youtube.com/watch?v=kVrqfYjkTdQ" target="_blank" className="btn btn-dark">
+                <a href="https://www.youtube.com/watch?v=kVrqfYjkTdQ" target="_blank" className="btn btn-dark" style={{marginTop: "5px", marginLeft: "30%"}}>
                   Trailor
                 </a>
               </div>

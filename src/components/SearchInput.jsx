@@ -17,7 +17,7 @@ const SearchInput = () => {
               aria-label="Search"
 
             />
-            <Link to={`/search?q=${inputTxt}`} className='btn  btn-dark ' style={{ width: '140px', }}>Search </Link>
+            <Link to={`/search?q=${inputTxt}`} className='btn  btn-dark border-white' style={{ width: '110px',marginLeft: "5px" }}>Search </Link>
           </div>
 
 

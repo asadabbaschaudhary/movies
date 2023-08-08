@@ -64,7 +64,7 @@ function Create() {
                         <label htmlFor="trailor" className="form-label">Trailor</label>
                         <input onChange={(e) => { setTrailor(e.target.value) }} type="text" className="form-control" id="trailor" />
                     </div>
-                    <button onClick={handleSubmit} className='btn btn-primary'>Add Movie</button>
+                    <button onClick={handleSubmit} className='btn btn-dark outline-white'>Add Movie</button>
                 </div>
             </form>
             </div>

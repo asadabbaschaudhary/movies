@@ -25,19 +25,17 @@ function Detail() {
                             <img src={movie.image} height="250px" />
                         </div>
                         <div className="col-md-6">
-                            <h1> Title : {movie.name}</h1> 
+                            <h1> Title : {movie.name}</h1>
                             <p> About : {movie.about}</p>
                             <div><b>Genre: </b>{movie.genre}</div>
                             <div><b>Rating : </b>{movie.rating}</div>
-                            <div>
-                            Go-Back
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </>
         )
-    }else {
+    } else {
         return (
             <>
                 <div className="d-block mx-auto my-4 text-center">

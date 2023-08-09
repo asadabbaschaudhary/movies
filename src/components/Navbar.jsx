@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+
 import { Link } from "react-router-dom";
 import SearchInput from "./SearchInput";
 function Navbar() {

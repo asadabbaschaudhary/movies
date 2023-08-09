@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-
+import { ToastContainer, toast,Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function UpdateMovie() {
     const id = useParams().id;
     const [name, setName] = useState("");
@@ -12,6 +13,8 @@ function UpdateMovie() {
     const [feature, setFeature] = useState("");
     const [trailor, setTrailor] = useState("");
 
+    const notify1 = () => toast.success("Movie update Successfully");
+    const notify2 = () => toast.danger("Something Went wrong");
     const handleSubmit = () => {
         const movieData = {
             name: name, image: image, about: about, genre: genre, rating: rating, feature: feature, trailor: trailor
@@ -24,10 +27,10 @@ function UpdateMovie() {
         ).then((res) => {
             console.log(res.data)
             if (res.data.status == true) {
-                alert("movies update successfully");
+                notify1();
             } else {
                 if (res.data.status == false) {
-                    alert("something went wrong");
+                    notify2();
                 }
             }
         })
@@ -55,7 +58,20 @@ function UpdateMovie() {
 
     return (
         <>
-
+  
+          <ToastContainer
+        position="top-center"
+        autoClose={500}
+        transition={Flip}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover={false}
+        theme="light"
+      />
             <div className='container d-flex justify-content-center'>
                 <div style={{ width: "50%" }}>
                     <form onSubmit={(e) => e.preventDefault()}>

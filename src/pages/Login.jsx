@@ -50,12 +50,12 @@ function Login() {
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" onChange={(e) => setPassword(e.target.value)} className="form-control" id="exampleInputPassword1" />
                 </div>
-                <div className="mb-3 form-check">
+                {/* <div className="mb-3 form-check">
                     <label className="form-check-label" htmlFor="exampleCheck1">
                         Don't have account?
                     </label>
                     <Link to="/signup" className='mx-2 signup form-text '>Register</Link>
-                </div>
+                </div> */}
                 <div>
                     {
                         (error !== null) ? <div className='alert alert-danger'>{error}</div> : null
